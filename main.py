@@ -309,7 +309,7 @@ class GameView(discord.ui.View):
             active_games.pop(self.message_id, None)
 
 # --- COMMANDES ---
-@bot.tree.command(name="duel", description="Lancer une partie de Numéro Mystère.")
+@bot.tree.command(name="sleeping", description="Lancer une partie de Numéro Mystère.")
 @app_commands.describe(montant="Montant misé en kamas")
 async def startgame(interaction: discord.Interaction, montant: int):
     if interaction.channel.id != ID_SALON_JEU:
